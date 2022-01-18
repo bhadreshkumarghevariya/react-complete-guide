@@ -6,10 +6,11 @@ import ExpensesFilter from "./ExpensesFilter";
 
 function Expenses(props) {
   const [filteredYear, setFilteredYear] = useState("2020");
+
   const filterExpensesByYear = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
-  // console.log(filteredYear);
+
   return (
     <div>
       <Card className="expenses">
